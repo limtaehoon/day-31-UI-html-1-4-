@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+     <meta charset="utf-8">
+		 <title> 웹 폼</title>
+     <style>
+			 body {
+				background-color:#fff; 
+			 }
+			 form fieldset{
+				margin-bottom:25px; 
+			 }
+			 form legend{
+				font-size:15px;
+				font-weight:600; 
+			 }
+			.reg {
+				font-size:14px;
+				width:110px;
+				color:#390;
+				font-weight:bold;		
+				float:left;/*온쪽정렬*/
+				text-align:right;
+				margin-right:10px;
+			 }	 
+			 form ul li{
+				list-style:none; 
+				margin: 15px 0;	
+				font-size:14px;	
+			 }
+	 </style>
+  </head>
+  <body>
+  
+	<h1>여름방학 특강 신청</h1>
+<form>
+	<fieldset>
+  	<legend>수강신청인</legend>
+		<ul> 
+			<li>
+				<label class="reg" for="id">학번</label>
+				<input type="text" name="id" id="id" autofocus>
+			</li>
+			<li>
+				<label class="reg" for="name">이름</label> 
+				<input type="text" name="name" id="name">
+			</li>
+			<li>
+				<label for="class" class="reg">학과</label>
+				<select id="class">
+					<optgroup label="공과대학">
+						<option value="archi"> 건축공학과</option>
+						<option value="mechanic"> 기계공학과</option>
+						<option value="indust"> 산업공학과</option>
+						<option value="elec"> 전기전자공학과</option>
+						<option value="computer"> 컴퓨터공학과</option>
+						<option value="chemicul"> 화학공학과</option>
+					</optgroup>
+					<optgroup label="인문대학">
+						<option value="history">사학과</option>
+						<option value="b">경영학과</option>
+						<option value="c">행정학과</option>
+					</optgroup>	
+				</select>
+			</li>
+	
+		</ul>
+	</fieldset>
+	<fieldset>
+	<legend>수강과목선택</legend>
+		<ul>
+			<li>
+				<label for="industry" class="reg">관심분야</label>
+				<input type="text" id="industry" list="chorce">
+				<datalist id="chorce">
+					<option value=  "grammar" label="문법"></option>
+					<option value=  "voca" label="어휘"></option>
+					<option value=  "listening" label="리스닝"></option>
+					<option value=  "news" label="뉴스청취"></option>
+				</datalist>
+			</li>
+
+
+		</ul>
+	</fieldset>
+	
+</form>
+  </body>
+</html>
